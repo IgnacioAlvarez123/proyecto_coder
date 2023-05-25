@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="link rel="preconnect href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
 
 
 <body>
-
+    <!--Empieza el header-->
     <header>
         <div class="div_h1">
             <img class="div_logo" src="./img/logo.png" alt="Spaceat logo">
@@ -31,19 +32,63 @@
 
     </header>
     <hr>
+    <!--Empieza la sección del index-->
     <main>
         <section class="fondo_spaceat">
             <article>
                 <h2 class="titulos">Sugerencias del día</h2>
-                <div class="articulo_del_dia">
-                <img class="div_hamburguesa_saturno" src="./img/hamburguesa_saturno.jpg" alt="Hamburguesa Saturno">
+            <div class="articulo_del_dia">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <div class="tamaño_img">
+                        <img src="./img/hamburguesa_mercurio.jpg" class="d-block w-100" alt="Hamburguesa Mercurio">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Hamburguesa Mercurio</h5>
+                        <p>Nominada a mejor hamburguesa del año!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="tamaño_img">
+                        <img src="./img/2x1_spaceat.jpg" class="d-block w-100" alt="2x1">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>2x1 en hamburguesa a elección!</h5>
+                        <p>(El precio varia según a la hamburguesa elegida)</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="tamaño_img">
+                        <img src="./img/hamburguesa_tierra.jpg" class="d-block w-100" alt="Hamburguesa Tierra">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Hamburguesa Tierra</h5>
+                        <p>¿Estas listo para probar la hamburguesa con mas ingredientes de la carta?</p>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+            </div>
             </article>
             <article>
                     <h2 class="titulos">No te pierdas estas ofertas!</h2>
                     <div class="div_h3_index">
-                    <h3 class="h2_menu">2x1 en Hamburguesa a elección!</h3>
-                    <h3 class="h2_menu">No te pierdas la nueva hamburguesa marte!</h3>
+                        <h3 class="h2_menu">2x1 en Hamburguesa a elección!</h3>
+                        <h3 class="h2_menu">No te pierdas la nueva hamburguesa marte!</h3>
                     </div>
                     <div class="div_articulos_index">
                         <img class="div_hamburguesas_index" src="./img/2x1_spaceat.jpg" alt="2x1 hamburguesa a eleccion">
@@ -52,6 +97,7 @@
             </article>
         </section>
         <hr>
+        <!--Empieza el footer-->
         <footer>
             <div>
                 <h2 class="titulo_footer">Seguinos</h2>
@@ -76,6 +122,7 @@
 
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>
