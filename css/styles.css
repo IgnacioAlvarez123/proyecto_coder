@@ -13,6 +13,7 @@ hr {
 .h1_correccion {
   display: flex;
   flex-direction: row;
+  align-items: center;
   color: #f5fae7;
   font-family: "Roboto";
   font-size: 1.2rem;
@@ -34,8 +35,8 @@ h2 {
   font-family: "Roboto";
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: baseline;
+  justify-content: center;
   gap: 30px;
   padding-bottom: 20px;
   font-size: 1.3rem;
@@ -120,11 +121,11 @@ h2 {
 .div_menu {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 150px;
   padding-left: 100px;
   padding-top: 50px;
   justify-content: space-between;
-  align-items: center;
 }
 
 .h2_menu {
@@ -220,8 +221,8 @@ header {
   background-color: #222221;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .spaceat {
@@ -242,8 +243,8 @@ header {
 .div_h1 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .nav_list {
@@ -329,8 +330,8 @@ footer {
   background-color: #222221;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
 }
 
 .nav_footer {
@@ -458,8 +459,8 @@ footer {
     background-color: #222221;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 767px) {
@@ -547,8 +548,8 @@ footer {
     background-color: #222221;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -643,8 +644,8 @@ footer {
 .articulo_del_dia {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 10%;
   object-fit: cover;
@@ -666,8 +667,8 @@ footer {
 .div_articulos_index {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .tamaño_img {
@@ -693,8 +694,8 @@ footer {
   .div_articulos_index {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
     width: 300px;
   }
@@ -709,8 +710,8 @@ footer {
   .section_index {
     display: flex;
     flex-direction: column;
-    gap: 50px;
     align-items: center;
+    gap: 50px;
     padding-top: 60px;
     text-align: center;
   }
@@ -754,8 +755,8 @@ footer {
   .div_articulos_index {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
     width: 300px;
   }
@@ -772,8 +773,8 @@ footer {
   .div_articulos_index {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
   }
 }
@@ -781,8 +782,8 @@ footer {
   .articulo_del_dia {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 10%;
     object-fit: cover;
@@ -939,6 +940,7 @@ footer {
   .div_h3_promos {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     align-items: center;
     width: 400px;
@@ -995,6 +997,7 @@ footer {
     height: 350px;
     object-fit: cover;
     margin: 0;
+    padding-left: 70px;
   }
 }
 @media screen and (min-width: 767px) {
@@ -1039,19 +1042,19 @@ footer {
   .precios_promos {
     display: flex;
     flex-direction: row;
+    align-items: center;
     text-align: center;
     padding-top: 50px;
     gap: 100px;
     width: 500px;
-    align-items: center;
   }
 }
 @media screen and (min-width: 767px) {
   .div_h3_promos {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
+    text-align: center;
     padding: 20px;
     gap: 100px;
     justify-content: space-between;
@@ -1094,8 +1097,8 @@ footer {
 .mapa {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding-top: 50px;
   gap: 200px;
 }
@@ -1103,34 +1106,29 @@ footer {
 .articulo_sucursales {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
-  align-items: center;
   gap: 50px;
 }
 
 @media screen and (max-width: 421px) {
-  .mapa, .mapa_responsive_767 {
+  .mapa,
+  .mapa_responsive_767 {
     display: none;
   }
 }
 @media screen and (min-width: 421px) {
   .mapa_responsive_420 {
     display: none;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    padding-top: 30px;
   }
 }
 @media screen and (max-width: 421px) {
   .mapa_responsive_420 {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
+    text-align: center;
     padding: 0;
   }
 }
@@ -1156,8 +1154,8 @@ footer {
   .mapa_responsive_767 {
     display: flex;
     flex-direction: row;
-    text-align: center;
     align-items: center;
+    text-align: center;
     justify-content: space-around;
     padding: 0;
   }
