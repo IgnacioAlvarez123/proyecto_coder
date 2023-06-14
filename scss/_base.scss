@@ -1,6 +1,11 @@
-
-$font-letra:"Roboto";
+$font-letra: "Roboto";
 $color-letras: #f5fae7;
+
+@mixin flexbox($direction, $align) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+}
 
 * {
     text-decoration: none;
@@ -14,31 +19,30 @@ hr {
 }
 
 .h1_correccion {
-    display: flex;
-    flex-direction: row;
-    color:$color-letras ;
+    @include flexbox(row, center);
+    color: $color-letras ;
     font-family: $font-letra;
     font-size: 1.2rem;
     text-decoration: none;
-    &:hover{
-    color: rgba(161, 45, 45, 0.747);
+
+    &:hover {
+        color: rgba(161, 45, 45, 0.747);
     }
 }
 
 a {
-    color:$color-letras ;
+    color: $color-letras ;
     text-decoration: none;
-    &:hover{
-    color: rgba(161, 45, 45, 0.747);
+
+    &:hover {
+        color: rgba(161, 45, 45, 0.747);
     }
 }
 
 h2 {
     font-family: $font-letra;
-    display: flex;
-    flex-direction: row;
+    @include flexbox(row, baseline);
     justify-content: center;
-    align-items: baseline;
     gap: 30px;
     padding-bottom: 20px;
     font-size: 1.3rem;
@@ -59,9 +63,7 @@ i {
     color: $color-letras ;
     margin-left: 15px;
     margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+    @include flexbox(row, baseline);
 }
 
 h3,
@@ -109,31 +111,27 @@ h2 {
     margin-top: 30px;
     object-fit: cover;
 
-    &:hover{
-        transform: scale(1.2,1.2);
+    &:hover {
+        transform: scale(1.2, 1.2);
 
         transition-duration: 1s;
     }
 }
 
 .precios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox(column, center);
 }
 
 .div_menu {
-    display: flex;
-    flex-direction: row;
+    @include flexbox(row, center);
     gap: 150px;
     padding-left: 100px;
     padding-top: 50px;
     justify-content: space-between;
-    align-items: center;
 }
 
 .h2_menu {
-    color:$color-letras ;
+    color: $color-letras ;
     text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
     font-size: 1.5rem;
     padding-top: 60px;
@@ -207,7 +205,7 @@ h2 {
 
 
 @media screen and (min-width: 1300px) {
-    .precios{
+    .precios {
         text-align: center;
         padding-top: 0px;
         gap: 0px;

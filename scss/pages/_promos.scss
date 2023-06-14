@@ -34,8 +34,8 @@
     border: solid 3px white;
     margin-top: 30px;
 
-    &:hover{
-        transform: scale(1.2,1.2);
+    &:hover {
+        transform: scale(1.2, 1.2);
         transition-duration: 1s;
     }
 }
@@ -63,11 +63,10 @@
 
 @media screen and (max-width: 421px) {
     .div_h3_promos {
-        display: flex;
-        flex-direction: column;
+        @include flexbox(column, center);
         text-align: center;
         align-items: center;
-        width: 400px ;
+        width: 400px;
         padding: 0;
     }
 }
@@ -81,7 +80,7 @@
 }
 
 @media screen and (max-width: 420px) {
-    .parrafos{
+    .parrafos {
         text-align: center;
     }
 }
@@ -109,7 +108,7 @@
 }
 
 @media screen and (min-width: 767px) {
-    .precios_promos{
+    .precios_promos {
         text-align: center;
         padding-top: 120px;
         gap: 20px;
@@ -119,7 +118,7 @@
 
 
 @media screen and (min-width: 767px) {
-    .parrafos{
+    .parrafos {
         text-align: center;
         padding: 0;
     }
@@ -131,6 +130,7 @@
         height: 350px;
         object-fit: cover;
         margin: 0;
+        padding-left: 70px;
     }
 }
 
@@ -149,12 +149,13 @@
         display: none;
     }
 }
+
 @media screen and (min-width: 767px) {
     .fondo_spaceat_promos {
-    height: 310vh;
-    width: 100%;
-    background-image: url("../img/Fondo");
-    background-color: #222221;
+        height: 310vh;
+        width: 100%;
+        background-image: url("../img/Fondo");
+        background-color: #222221;
     }
 }
 
@@ -169,33 +170,29 @@
 
 @media screen and (min-width: 1300px) {
     .fondo_spaceat_promos {
-    height: 180vh;
-    width: 100%;
-    background-image: url("../img/Fondo");
-    background-color: #222221;
+        height: 180vh;
+        width: 100%;
+        background-image: url("../img/Fondo");
+        background-color: #222221;
     }
 }
 
 @media screen and (min-width: 1300px) {
-    .precios_promos{
-        display: flex;
-        flex-direction: row;
+    .precios_promos {
+        @include flexbox(row, center);
         text-align: center;
         padding-top: 50px;
         gap: 100px;
         width: 500px;
-        align-items: center;
     }
 }
 
 @media screen and (min-width: 767px) {
     .div_h3_promos {
-        display: flex;
-        flex-direction: column;
+        @include flexbox(column, center);
         text-align: center;
-        align-items: center;
         padding: 20px;
-        gap:100px;
+        gap: 100px;
         justify-content: space-between;
     }
 }
@@ -224,7 +221,7 @@
 
 
 @media screen and (min-width: 1300px) {
-    .parrafos{
+    .parrafos {
         text-align: center;
         align-items: center;
         padding: 0;

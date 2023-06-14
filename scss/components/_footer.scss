@@ -1,12 +1,8 @@
-
-
 footer {
     height: 150px;
     background-color: #222221;
-    display: flex;
-    flex-direction: row;
+    @include flexbox(row, center);
     justify-content: space-around;
-    align-items: center;
 }
 
 .nav_footer {
@@ -136,14 +132,12 @@ footer {
     }
 }
 
-@media screen and (min-width: 767px)  {
+@media screen and (min-width: 767px) {
     footer {
-    height: 170px;
-    background-color: #222221;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+        height: 170px;
+        background-color: #222221;
+        @include flexbox(row, center);
+        justify-content: space-around;
     }
 }
 
@@ -156,7 +150,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 767px)  {
+@media screen and (min-width: 767px) {
     .footer_tamaño {
         height: 40vh;
         display: flex;
@@ -165,7 +159,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 767px)  {
+@media screen and (min-width: 767px) {
     .nav_footer {
         display: flex;
         flex-direction: row;
@@ -179,7 +173,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 767px)  {
+@media screen and (min-width: 767px) {
     .div_tablet {
         display: flex;
         flex-direction: column;
@@ -187,7 +181,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 767px)  {
+@media screen and (min-width: 767px) {
     .div_footer {
         display: flex;
         flex-direction: row;
@@ -197,19 +191,19 @@ footer {
     }
 }
 
-@media screen and (min-width: 767px)  {
+@media screen and (min-width: 767px) {
     .spaceat_footer {
-    color: $color-letras;
-    font-family: $font-letra;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+        color: $color-letras;
+        font-family: $font-letra;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 }
 
-@media screen and (min-width: 767px)  {
+@media screen and (min-width: 767px) {
     .spaceat_responsive {
         display: none;
     }
@@ -235,19 +229,17 @@ footer {
     }
 }
 
-@media screen and (min-width: 1300px)  {
+@media screen and (min-width: 1300px) {
     footer {
-    height: 170px;
-    background-color: #222221;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+        height: 170px;
+        background-color: #222221;
+        @include flexbox(row, center);
+        justify-content: space-around;
     }
 }
 
-@media screen and (min-width: 1300px)  {
-    .nav_footer{
+@media screen and (min-width: 1300px) {
+    .nav_footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -261,53 +253,54 @@ footer {
     }
 }
 
-@media screen and (min-width: 1300px)  {
+@media screen and (min-width: 1300px) {
     .titulo_footer {
-    color: $color-letras;
-    font-family: $font-letra;
-    font-size: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-left: 20px;
-    margin-bottom: 10px;
+        color: $color-letras;
+        font-family: $font-letra;
+        font-size: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-left: 20px;
+        margin-bottom: 10px;
     }
 }
-@media screen and (min-width: 1300px)  {
+
+@media screen and (min-width: 1300px) {
     .div_footer {
         display: flex;
-    flex-direction: row;
-    justify-content: end;
-    padding-left: 70px;
-    padding-bottom: 0;
+        flex-direction: row;
+        justify-content: end;
+        padding-left: 70px;
+        padding-bottom: 0;
     }
 }
 
-@media screen and (min-width: 1300px)  {
+@media screen and (min-width: 1300px) {
     .spaceat_footer {
-    color: $color-letras;
-    font-family: $font-letra;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+        color: $color-letras;
+        font-family: $font-letra;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 }
 
-@media screen and (min-width: 1300px)  {
+@media screen and (min-width: 1300px) {
     .spaceat_responsive {
         display: none;
     }
 }
 
-@media screen and (min-width: 1300px)  {
+@media screen and (min-width: 1300px) {
     .footer_tamaño {
         height: 15vh;
         display: flex;
         flex-direction: row;
-        justify-content:space-around;
+        justify-content: space-around;
     }
 }
 
@@ -330,7 +323,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1300px)  {
+@media screen and (min-width: 1300px) {
     .div_tablet {
         display: flex;
         flex-direction: row;
