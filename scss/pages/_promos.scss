@@ -1,0 +1,232 @@
+.fondo_spaceat_promos {
+    height: 140vh;
+    background-image: url("../img/Fondo");
+    background-color: #222221;
+}
+
+.div_h3_promos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+
+.h2_promos {
+    color: $color-letras ;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+    font-size: 1.5rem;
+    padding-top: 90px;
+}
+
+.letra_chica {
+    font-family: $font-letra;
+    font-size: 1rem;
+    color: $color-letras;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+    font-size: 1rem;
+    padding-top: 20px;
+}
+
+.imagen_triple {
+    height: 300px;
+    width: 350px;
+    background-position: center;
+    border: solid 3px white;
+    margin-top: 30px;
+
+    &:hover{
+        transform: scale(1.2,1.2);
+        transition-duration: 1s;
+    }
+}
+
+.parrafos {
+    color: $color-letras;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+    font-size: 1.2rem;
+    padding-top: 50px;
+    font-family: $font-letra;
+}
+
+
+@media screen and (max-width: 421px) {
+    .fondo_spaceat_promos {
+        height: 340vh;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .letra_chica {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .div_h3_promos {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 400px ;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .promo_tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .parrafos{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .h2_promos {
+        padding-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .imagen_triple {
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .promo_tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .precios_promos{
+        text-align: center;
+        padding-top: 120px;
+        gap: 20px;
+    }
+}
+
+
+
+@media screen and (min-width: 767px) {
+    .parrafos{
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .imagen_triple {
+        width: 250px;
+        height: 350px;
+        object-fit: cover;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .div_promos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 60px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .letra_chica {
+        display: none;
+    }
+}
+@media screen and (min-width: 767px) {
+    .fondo_spaceat_promos {
+    height: 310vh;
+    width: 100%;
+    background-image: url("../img/Fondo");
+    background-color: #222221;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .promo_tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 100px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .fondo_spaceat_promos {
+    height: 180vh;
+    width: 100%;
+    background-image: url("../img/Fondo");
+    background-color: #222221;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .precios_promos{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding-top: 50px;
+        gap: 100px;
+        width: 500px;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .div_h3_promos {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        gap:100px;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .div_h3_promos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 60px;
+        width: 100%;
+        padding-top: 120px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .div_promos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 60px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+    .parrafos{
+        text-align: center;
+        align-items: center;
+        padding: 0;
+    }
+}

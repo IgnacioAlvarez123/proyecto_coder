@@ -1,0 +1,234 @@
+
+$font-letra:"Roboto";
+$color-letras: #f5fae7;
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    text-decoration: none;
+    margin: 0rem;
+}
+
+.h1_correccion {
+    display: flex;
+    flex-direction: row;
+    color:$color-letras ;
+    font-family: $font-letra;
+    font-size: 1.2rem;
+    text-decoration: none;
+    &:hover{
+    color: rgba(161, 45, 45, 0.747);
+    }
+}
+
+a {
+    color:$color-letras ;
+    text-decoration: none;
+    &:hover{
+    color: rgba(161, 45, 45, 0.747);
+    }
+}
+
+h2 {
+    font-family: $font-letra;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 30px;
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+ul {
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+article {
+    padding: 30px;
+}
+
+i {
+    color: $color-letras ;
+    margin-left: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+h3,
+h2 {
+    color: $color-letras;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+}
+
+.titulos {
+    font-size: 1.5rem;
+    padding-top: 30px;
+    color: $color-letras;
+}
+
+.div_logo {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-image: url("../img/logo.png");
+    background-position: top left;
+}
+
+.div_logo_mobile {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-image: url("../img/Logo_prueba.png");
+    background-position: top left;
+}
+
+.div_hamburguesa_saturno {
+    height: 400px;
+    width: 600px;
+    background-image: url(../img/Hamburguesa\ Saturno.jpg);
+    background-position: center;
+    color: $color-letras ;
+    margin-top: 40px;
+}
+
+.imagenes {
+    height: 250px;
+    width: 260px;
+    background-position: center;
+    border: solid 3px white;
+    margin-top: 30px;
+    object-fit: cover;
+
+    &:hover{
+        transform: scale(1.2,1.2);
+
+        transition-duration: 1s;
+    }
+}
+
+.precios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    padding-left: 100px;
+    padding-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h2_menu {
+    color:$color-letras ;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+    font-size: 1.5rem;
+    padding-top: 60px;
+    font-family: $font-letra;
+}
+
+.texto {
+    font-family: $font-letra;
+    font-size: 1.3rem;
+    color: $color-letras;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+}
+
+.nav_link {
+    font-size: 1.5rem;
+    color: $color-letras ;
+}
+
+
+@media screen and (max-width: 420px) {
+    .div_logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 421px) {
+    .div_logo_mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 421px) {
+    .navbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .spaceat {
+        padding-left: 30px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .div_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 100px;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .imagenes {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .precios {
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+        padding-bottom: 50px;
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+    .precios{
+        text-align: center;
+        padding-top: 0px;
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .texto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .div_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 100px;
+        gap: 300px;
+    }
+}

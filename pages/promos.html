@@ -1,28 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--Link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--Link font-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/69023b7b25.js" crossorigin="anonymous"></script>
-    <title>Promos</title>
+    <!--Link css-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--SEO-->
+    <title>Spaceat  -  Promos</title>
+    <meta name="description" content="Conocé nuestras promociones!">
+    <meta name="keywords" content="Hamburguesa, Hamburgueseria, Comida, Argentina, Córdoba, Restaurante, Mejor, Promociones">
 </head>
+
 <body>
+
     <!--Empieza el header-->
-    <header>
+    <header class="div_header">
+
+        <!--Menú hamburguesa-->
         <div class="div_h1">
             <img class="div_logo" src="../img/logo.png" alt="Spaceat logo">
-            <a href="../index.html" ><p class="spaceat">Spaceat</p></a>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                        aria-label="Toggle navigation">
+                        <span> <img class="div_logo_mobile" src="../img/Logo_prueba.png" alt=""></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Spaceat</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav_link" href="../index.html">Spaceat</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" style="color: #f5fae7; font-size: 1.5rem;"
+                                        aria-current="page" href="./menu.html">Menú</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav_link" href="./promos.html">Promos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav_link" href="./sucursales.html">Sucursales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav_link" href="./sobre_nosotros.html">Sobre nosotros</a>
+                                </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--Marca-->
+            <a href="../index.html">
+                <p class="spaceat">Spaceat</p>
+            </a>
         </div>
+        
+        <!--Navbar-->
         <nav>
             <ul class="nav_list">
-                <li><a href="menu.html" >Menú</a></li>
-                <li><a href="promos.html" ><h1 class="h1_correccion">Promos</h1></a></li>
-                <li><a href="sucursales.html" >Sucursales</a></li>
-                <li><a href="sobre_nosotros.html" >Sobre nosotros</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="promos.html">
+                        <h1 class="h1_correccion">Promos</h1>
+                    </a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
             </ul>
         </nav>
     </header>
@@ -32,61 +88,84 @@
     <main>
         <section class="fondo_spaceat_promos">
             <h2 class="h2_promos">Estas son las promos de hoy:</h2>
-                <div class="div_h3_promos">
-                <h3 class="h2_menu">2x1 en Hamburguesa a elección!</h3>
-                <h3 class="h2_menu">No te pierdas la nueva hamburguesa marte!</h3>
+            <div class="div_h3_promos">
+                <div class="promo_tablet">
+                    <h3 class="h2_promos">2x1 en hamburguesa a elección</h3>
+                <div class="div_promos">
+                <img class="imagenes" src="../img/2x1_spaceat.jpg" alt="2x1 hamburguesa a elección">
+                <div class="precios_promos">
+                    <h4 class="parrafos">Elegí la hamburguesa que mas te gusta y disfrutala el doble!</h4>
+                    <p class="letra_chica">(El precio varia según a la hamburguesa elegida)</p>
                 </div>
-                <div class="div_menu">
-                    <img class="imagenes" src="../img/2x1_spaceat.jpg" alt="2x1 hamburguesa a elección">
-                    <div class="precios">
-                        <h4 class="parrafos">Elegí la hamburguesa que mas te gusta y disfrutala el doble!</h4>
-                        <h5 class="letra_chica">(El precio varia según a la hamburguesa elegida)</h5>
-                    </div>
-                    <img class="imagenes" src="../img/hamburguesa_marte.jpg" alt="Nueva hamburguesa Marte">
-                    <div class="precios">
-                        <h4 class="parrafos">La nueva hamburguesa esta a un precio imperdible!</h4>
-                        <h4 class="parrafos">Precio: $1300</h4>
-                    </div>
-                ></div>
-                <div class="div_h3_promos">
-                <h3 class="h2_menu">Probaste nuestra opción triple?</h3>
-                <h3 class="h2_menu">De lunes a jueves 25% off!!</h3>
                 </div>
-                <div class="div_menu">
-                    <img class="imagen_triple" src="../img/promo_triple.jpg" alt="Ahora disponible la triple!">
-                    <div class="precios">
-                        <h4 class="parrafos">Triple hamburguesa a elección del menu!</h4>
-                        <h5 class="letra_chica">(El precio varia según a la hamburguesa elegida)</h5>
-                    </div>
-                    <img class="imagen_triple" src="../img/promo25.jpg" alt="25% off lunes a jueves">
-                    <div class="precios">
-                        <h4 class="parrafos">Pasate por spaceat durante estos días para la promo!</h4>
-                    </div>
-                ></div>
+                </div>
+                <div class="promo_tablet">
+                <h3 class="h2_promos">Nueva hamburguesa Marte</h3>
+                <div class="div_promos">
+                <img class="imagenes" src="../img/hamburguesa_marte.jpg" alt="Nueva hamburguesa Marte">
+                <div class="precios_promos">
+                    <h4 class="parrafos">La nueva hamburguesa esta a un precio imperdible!</h4>
+                    <h4 class="parrafos">Precio $1300</h4>
+                </div>
+                </div>
+                </div>
+            ></div>
+
+
+            <div class="div_h3_promos">
+                <div class="promo_tablet">
+                    <h3 class="h2_promos">Probaste nuestra opción triple?</h3>
+                <div class="div_promos">
+                <img class="imagen_triple" src="../img/promo_triple.jpg" alt="Ahora disponible la triple!">
+                <div class="precios_promos">
+                    <h4 class="parrafos">Triple hamburguesa a elección del menu!</h4>
+                    <p class="letra_chica">(El precio varia según a la hamburguesa elegida)</p>
+                </div>
+                </div>
+                </div>
+                <div class="promo_tablet">
+                <h3 class="h2_promos">De lunes a jueves 25% off!!</h3>
+                <div class="div_promos">
+                <img class="imagen_triple" src="../img/promo25.jpg" alt="25% off lunes a jueves">
+                <div class="precios_promos">
+                    <h4 class="parrafos">Pasate por spaceat durante estos días para la promo!</h4>
+                </div>
+                </div>
+                </div>
+            ></div>
         </section>
         <hr>
         <!--Empieza el footer-->
-        <footer>
-            <div>
-                <h4 class="titulo_footer">Seguinos</h4>
-                <i class="fa-brands fa-instagram fa-xl"></i>
-                <i class="fa-brands fa-twitter fa-xl"></i>
-                <i class="fa-brands fa-facebook-f fa-xl"></i>
-            </div>
-            <nav>
-                <ul class="nav_footer">
-                    <li>Política de privacidad</li>
-                    <li>Contacto</li>
-                    <li>Defensa al consumidor</li>
-                    <li>Empleo</li>
-                </ul>
-            </nav>
+        <footer class="footer_tamaño">
+            <div class="div_tablet">
+                <div class="footer_responsive">
+                    <p class="spaceat_responsive">Spaceat</p>
+                    <h5 class="titulo_footer">Seguinos</h5>
+                    <div class="logo_redes">
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                    <i class="fa-brands fa-facebook-f fa-xl"></i>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="nav_footer">
+                        <li>Política de privacidad</li>
+                        <li>Contacto</li>
+                        <li>Defensa al consumidor</li>
+                        <li>Empleo</li>
+                    </ul>
+                </nav class="nav_responsive">
+                </div>
             <div class="div_footer">
-            <p class="spaceat_footer">Spaceat</p>
-            <img class="div_logo" src="../img/logo.png" alt="Spaceat logo">
+                <h1 class="spaceat_footer">Spaceat</h1>
+                <img class="div_logo" src="../img/logo.png" alt="Spaceat logo">
             </div>
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
 </body>
+
 </html>

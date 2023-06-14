@@ -1,0 +1,123 @@
+
+
+header {
+    background-color: #222221;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spaceat {
+    color: #f5fae7;
+    font-family: $font-letra;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10px;
+    text-decoration: none;
+
+    &:hover{
+        color: rgba(161, 45, 45, 0.747);
+    }
+    }
+
+.div_h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    margin-right: 200px;
+    color: $color-letras;
+    font-family: $font-letra;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 420px) {
+    .nav_responsive {
+        display: flex;
+        flex-direction: column;
+        padding-right: 160px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .nav_list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .nav_responsive {
+        display: flex;
+        flex-direction: column;
+        padding-right: 160px;
+    }
+}
+
+
+
+@media screen and (min-width: 767px) {
+    .nav_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 0px;
+        color: $color-letras;
+        gap: 15vw;
+        font-family: $font-letra;
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (min-width: 767px){
+    .div_header {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .div_header {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .nav_list {
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+        margin-right: 200px;
+        color: $color-letras;
+        font-family: $font-letra;
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .nav_responsive {
+        display: flex;
+        flex-direction: column;
+        padding-right: 160px;
+    }
+}
+
+
+

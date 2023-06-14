@@ -1,0 +1,70 @@
+.fondo_spaceat_menu {
+    height: 170vh;
+    width: 100%;
+    background-image: url("../img/Fondo");
+    background-color: #222221;
+}
+
+@media screen and (max-width: 421px) {
+    .fondo_spaceat_menu {
+        height: 440vh;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .h2_menu {
+        padding-top: 70px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .h2_menu {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 767px) {
+    .div_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 100px;
+        gap: 60px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .menu_tablet{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .div_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-right: 100px;
+        gap: 60px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .fondo_spaceat_menu {
+    height: 380vh;
+    width: 100%;
+    background-image: url("../img/Fondo");
+    background-color: #222221;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .fondo_spaceat_menu {
+    height: 180vh;
+    width: 100%;
+    background-image: url("../img/Fondo");
+    background-color: #222221;
+    }
+}

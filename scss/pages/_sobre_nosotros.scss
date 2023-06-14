@@ -1,0 +1,86 @@
+.fondo_spaceat_nosotros {
+    height: 120vh;
+    background-image: url("../img/Fondo");
+    background-color: #222221;
+}
+
+.div_nosotros {
+    grid-column: 2span;
+    grid-row: 2span;
+    align-items: center;
+}
+
+.imagen_reciclar {
+    height: 350px;
+    width: 500px;
+
+    &:hover{
+        transform: scale(1.2,1.2);
+
+        transition-duration: 1s;
+    }
+}
+
+.grid {
+    display: grid;
+    height: 50vh;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 200px;
+}
+
+.articulo_nosotros {
+    width: 100%;
+    padding: 50px;
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width: 421px) {
+    .imagen_reciclar {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 50px;
+        gap: 70px;
+    }
+}
+
+
+@media screen and (max-width: 421px) {
+    .fondo_spaceat_nosotros {
+        height: 100vh;
+    }
+}
+
+
+@media screen and (max-width: 421px) {
+    .h2_menu {
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+}
+
+
+@media screen and (min-width: 767px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        padding:0;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .texto{
+        text-align: center;
+        padding: 20px;
+    }
+}
