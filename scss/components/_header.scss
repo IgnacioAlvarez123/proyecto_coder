@@ -37,7 +37,7 @@ header {
     padding-top: 20px;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (min-width: 420px) {
     .nav_responsive {
         display: flex;
         flex-direction: column;
@@ -45,7 +45,7 @@ header {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 767px) {
     .nav_list {
         display: none;
     }
@@ -84,14 +84,14 @@ header {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .div_header {
         display: flex;
         flex-direction: row;
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .nav_list {
         display: flex;
         flex-direction: row;
@@ -105,7 +105,7 @@ header {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .nav_responsive {
         display: flex;
         flex-direction: column;

@@ -151,32 +151,32 @@ h2 {
 }
 
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 767px) {
     .div_logo {
         display: none;
     }
 }
 
-@media screen and (min-width: 421px) {
+@media screen and (min-width: 767px) {
     .div_logo_mobile {
         display: none;
     }
 }
 
-@media screen and (min-width: 421px) {
+@media screen and (min-width: 767px) {
     .navbar {
         display: none;
     }
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
     .spaceat {
         padding-left: 30px;
         padding-top: 10px;
     }
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
     .div_menu {
         display: flex;
         flex-direction: column;
@@ -203,8 +203,18 @@ h2 {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .precios {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-bottom: 50px;
+    }
+}
 
-@media screen and (min-width: 1300px) {
+
+
+@media screen and (min-width: 1399px) {
     .precios {
         text-align: center;
         padding-top: 0px;
@@ -221,12 +231,20 @@ h2 {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .div_menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-right: 100px;
         gap: 300px;
+    }
+}
+
+@media screen and (min-width: 1399px) {
+    .imagenes {
+        width: 190px;
+        height: 200px;
+        object-fit: cover;
     }
 }

@@ -5,13 +5,13 @@
     background-color: #222221;
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
     .fondo_spaceat_menu {
         height: 440vh;
     }
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
     .h2_menu {
         padding-top: 70px;
     }
@@ -42,7 +42,7 @@
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .div_menu {
         display: flex;
         flex-direction: row;
@@ -51,19 +51,37 @@
         gap: 60px;
     }
 }
-
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 421px) {
     .fondo_spaceat_menu {
-        height: 380vh;
+        height: 480vh;
         width: 100%;
         background-image: url("../img/Fondo");
         background-color: #222221;
     }
 }
 
-@media screen and (min-width: 1300px) {
+
+@media screen and (min-width: 421px) {
     .fondo_spaceat_menu {
-        height: 180vh;
+        height: 530vh;
+        width: 100%;
+        background-image: url("../img/Fondo");
+        background-color: #222221;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .fondo_spaceat_menu {
+        height: 360vh;
+        width: 100%;
+        background-image: url("../img/Fondo");
+        background-color: #222221;
+    }
+}
+
+@media screen and (min-width: 1399px) {
+    .fondo_spaceat_menu {
+        height: 155vh;
         width: 100%;
         background-image: url("../img/Fondo");
         background-color: #222221;

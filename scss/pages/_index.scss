@@ -45,10 +45,12 @@
     justify-content: space-around;
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
     .articulo_del_dia {
         height: 220px;
-        width: 350px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -61,14 +63,14 @@
     }
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
     .tamaño_img {
         height: 250px;
         width: 300px;
     }
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
     .section_index {
         @include flexbox(column, center);
         gap: 50px;
@@ -77,10 +79,10 @@
     }
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
     .div_hamburguesas_index {
-        height: 250px;
-        width: 350px;
+        height: 200px;
+        width: 300px;
         object-fit: cover;
     }
 }
@@ -127,7 +129,7 @@
 }
 
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .tamaño_img {
         width: 900px;
         height: 700px;
@@ -136,7 +138,7 @@
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .div_articulos_index {
         @include flexbox(column, center);
         justify-content: space-between;
@@ -145,7 +147,7 @@
 }
 
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .articulo_del_dia {
         @include flexbox(row, center);
         justify-content: center;
@@ -155,7 +157,7 @@
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .div_hamburguesas_index {
         height: 350px;
         width: 500px;
@@ -168,13 +170,13 @@
 
 @media screen and (min-width: 767px) {
     .fondo_spaceat {
-        height: 170vh;
+        height: 150vh;
         background-image: url("../img/Fondo");
         background-color: #222221;
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .fondo_spaceat {
         height: 180vh;
         background-image: url("../img/Fondo");

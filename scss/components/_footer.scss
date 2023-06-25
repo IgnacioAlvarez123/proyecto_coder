@@ -54,7 +54,7 @@ footer {
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
     .footer_responsive {
         display: flex;
         flex-direction: column;
@@ -63,7 +63,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
     .footer_tamaño {
         height: 70vh;
         display: flex;
@@ -72,7 +72,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
     .nav_footer {
         display: flex;
         flex-direction: column;
@@ -83,7 +83,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 421px) {
+@media screen and (max-width: 767px) {
     .logo_redes {
         display: flex;
         flex-direction: row;
@@ -92,7 +92,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
     .div_footer {
         display: flex;
         flex-direction: column;
@@ -101,13 +101,13 @@ footer {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 767px) {
     .spaceat_footer {
         display: none;
     }
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
     .spaceat_responsive {
         display: none;
         color: $color-letras;
@@ -122,7 +122,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 767px) {
     .titulo_footer {
         display: flex;
         flex-direction: row;
@@ -229,7 +229,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     footer {
         height: 170px;
         background-color: #222221;
@@ -238,12 +238,12 @@ footer {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .nav_footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 200px;
+        gap: 170px;
         color: $color-letras;
         font-family: $font-letra;
         font-size: 1rem;
@@ -253,7 +253,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .titulo_footer {
         color: $color-letras;
         font-family: $font-letra;
@@ -267,7 +267,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .div_footer {
         display: flex;
         flex-direction: row;
@@ -277,7 +277,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .spaceat_footer {
         color: $color-letras;
         font-family: $font-letra;
@@ -289,22 +289,22 @@ footer {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .spaceat_responsive {
         display: none;
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .footer_tamaño {
-        height: 15vh;
+        height: 20vh;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .footer_responsive {
         display: flex;
         flex-direction: column;
@@ -313,7 +313,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .logo_redes {
         display: flex;
         flex-direction: row;
@@ -323,9 +323,11 @@ footer {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
     .div_tablet {
         display: flex;
         flex-direction: row;
+        gap: 0;
+        padding-left: 20px;
     }
 }
