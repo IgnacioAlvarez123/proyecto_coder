@@ -68,6 +68,11 @@ h2 {
   text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
 }
 
+button {
+  background-color: #180b09;
+  padding: 121212px;
+}
+
 .titulos {
   font-size: 1.5rem;
   padding-top: 30px;
@@ -169,7 +174,7 @@ h2 {
     padding-top: 10px;
   }
 }
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
   .div_menu {
     display: flex;
     flex-direction: column;
@@ -190,6 +195,14 @@ h2 {
     display: flex;
     flex-direction: row;
     gap: 70px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .precios {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     padding-bottom: 50px;
   }
 }
@@ -451,7 +464,7 @@ footer {
     text-decoration: none;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 767px) {
   .titulo_footer {
     display: flex;
     flex-direction: row;
@@ -696,7 +709,9 @@ footer {
 @media screen and (max-width: 767px) {
   .articulo_del_dia {
     height: 220px;
-    width: 350px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 @media screen and (min-width: 767px) {
@@ -727,8 +742,8 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .div_hamburguesas_index {
-    height: 250px;
-    width: 350px;
+    height: 200px;
+    width: 300px;
     object-fit: cover;
   }
 }
@@ -810,7 +825,7 @@ footer {
 }
 @media screen and (min-width: 767px) {
   .fondo_spaceat {
-    height: 170vh;
+    height: 150vh;
     background-image: url("../img/Fondo");
     background-color: #222221;
   }
@@ -829,12 +844,28 @@ footer {
   background-color: #222221;
 }
 
-@media screen and (max-width: 421px) {
+button.mi_boton {
+  background-color: #ff6600; /* Cambia el color de fondo a naranja */
+  color: #fff; /* Cambia el color del texto a blanco */
+  font-size: 16px; /* Cambia el tamaño de la fuente */
+  padding: 10px 20px; /* Añade espacio alrededor del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Agrega esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al puntero al pasar por encima */
+  transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+}
+
+/* Cambia el estilo del botón al pasar el mouse por encima */
+button.mi_boton:hover {
+  background-color: #ff3300; /* Cambia el color de fondo al pasar el mouse por encima */
+}
+
+@media screen and (max-width: 767px) {
   .fondo_spaceat_menu {
     height: 440vh;
   }
 }
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
   .h2_menu {
     padding-top: 70px;
   }
@@ -861,7 +892,7 @@ footer {
     gap: 100px;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1399px) {
   .div_menu {
     display: flex;
     flex-direction: row;
@@ -870,15 +901,31 @@ footer {
     gap: 60px;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 421px) {
   .fondo_spaceat_menu {
-    height: 380vh;
+    height: 480vh;
     width: 100%;
     background-image: url("../img/Fondo");
     background-color: #222221;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 421px) {
+  .fondo_spaceat_menu {
+    height: 530vh;
+    width: 100%;
+    background-image: url("../img/Fondo");
+    background-color: #222221;
+  }
+}
+@media screen and (min-width: 767px) {
+  .fondo_spaceat_menu {
+    height: 1200vh;
+    width: 100%;
+    background-image: url("../img/Fondo");
+    background-color: #222221;
+  }
+}
+@media screen and (min-width: 1399px) {
   .fondo_spaceat_menu {
     height: 155vh;
     width: 100%;
@@ -886,6 +933,19 @@ footer {
     background-color: #222221;
   }
 }
+#carrito {
+  display: none;
+  position: fixed;
+  top: 10%;
+  right: 10px;
+  width: 30px;
+}
+
+.imagen_carrito {
+  width: 40%;
+  height: 60%;
+}
+
 .fondo_spaceat_promos {
   height: 140vh;
   background-image: url("../img/Fondo");
@@ -935,24 +995,23 @@ footer {
   font-family: "Roboto";
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
   .fondo_spaceat_promos {
-    height: 340vh;
+    height: 316vh;
   }
 }
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
   .letra_chica {
     display: none;
   }
 }
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
   .div_h3_promos {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     align-items: center;
-    width: 400px;
     padding: 0;
   }
 }
@@ -968,12 +1027,12 @@ footer {
     text-align: center;
   }
 }
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
   .h2_promos {
     padding-bottom: 80px;
   }
 }
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
   .imagen_triple {
     width: 250px;
     height: 300px;
@@ -1126,18 +1185,18 @@ footer {
   gap: 50px;
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
   .mapa,
   .mapa_responsive_767 {
     display: none;
   }
 }
-@media screen and (min-width: 421px) {
+@media screen and (min-width: 767px) {
   .mapa_responsive_420 {
     display: none;
   }
 }
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
   .mapa_responsive_420 {
     display: flex;
     flex-direction: column;
@@ -1146,7 +1205,7 @@ footer {
     padding: 0;
   }
 }
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
   .fondo_spaceat_sucursales {
     height: 95vh;
     background-image: url("../img/Fondo");
@@ -1210,7 +1269,7 @@ footer {
   padding-bottom: 40px;
 }
 
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
   .imagen_reciclar {
     width: 300px;
     height: 200px;
@@ -1224,12 +1283,21 @@ footer {
     gap: 70px;
   }
 }
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 70px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
   .fondo_spaceat_nosotros {
     height: 100vh;
   }
 }
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 767px) {
   .h2_menu {
     padding-top: 50px;
     padding-bottom: 0px;
@@ -1237,6 +1305,15 @@ footer {
 }
 @media screen and (min-width: 767px) {
   .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 0;
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .div_nosotros {
     display: flex;
     flex-direction: column;
     gap: 70px;

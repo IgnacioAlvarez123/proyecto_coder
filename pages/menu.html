@@ -11,8 +11,9 @@
     <!--Link font-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/69023b7b25.js" crossorigin="anonymous"></script>
-    <!--Link css-->
-    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Link css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <!--SEO-->
     <title>Spaceat - Menú</title>
     <meta name="description" content="Deleitate con nuestro amplio menú">
@@ -65,6 +66,8 @@
                 </div>
             </nav>
 
+            </nav>
+
             <!--Marca-->
             <a href="../index.html">
                 <p class="spaceat">Spaceat</p>
@@ -80,7 +83,18 @@
                 <li><a href="promos.html">Promos</a></li>
                 <li><a href="sucursales.html">Sucursales</a></li>
                 <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+                <div id="btnCarrito" style="margin-left: 50px">
+                    <button class="btn btn-outline-warning">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="currentColor"
+                            class="bi bi-cart" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg>
+                        <p id="contador__carrito"></p>
+                    </button>
+                </div>
             </ul>
+
         </nav>
     </header>
 
@@ -88,10 +102,24 @@
     <hr>
     <main>
         <section class="fondo_spaceat_menu">
-            <article>
-                <h2 class="h2_menu">Nuestros Productos</h2>
+            <h2 class="h2_menu">Nuestros Productos</h2>
             <div id="hamburguesas"></div>
-            <div id="carrito"></div>
+            <div id="carrito">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Unidades</th>
+                            <th>Costo Unitario</th>
+                            <th>Costo Total</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="items"></tbody>
+                    <tfoot id="totales"></tfoot>
+                </table>
+            </div>
         </section>
         <hr>
 
@@ -121,8 +149,11 @@
                 <img class="div_logo" src="../img/logo.png" alt="Spaceat logo">
             </div>
         </footer>
-        <!-- <script type="module" src="../db/hamburguesas.js"></script> -->
+        <script src="sweetalert2.all.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script type="module" src="../db/hamburguesas.js"></script>
         <script type="module" src="../js/menu.js"></script>
+        <script type="module" src="../js/carrito.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
             crossorigin="anonymous"></script>

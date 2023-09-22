@@ -5,6 +5,31 @@
     background-color: #222221;
 }
 
+button.mi_boton {
+    background-color: #ff6600;
+    /* Cambia el color de fondo a naranja */
+    color: #fff;
+    /* Cambia el color del texto a blanco */
+    font-size: 16px;
+    /* Cambia el tamaño de la fuente */
+    padding: 10px 20px;
+    /* Añade espacio alrededor del texto del botón */
+    border: none;
+    /* Elimina el borde del botón */
+    border-radius: 5px;
+    /* Agrega esquinas redondeadas */
+    cursor: pointer;
+    /* Cambia el cursor al puntero al pasar por encima */
+    transition: background-color 0.3s ease;
+    /* Agrega una transición suave al color de fondo */
+}
+
+/* Cambia el estilo del botón al pasar el mouse por encima */
+button.mi_boton:hover {
+    background-color: #ff3300;
+    /* Cambia el color de fondo al pasar el mouse por encima */
+}
+
 @media screen and (max-width: 767px) {
     .fondo_spaceat_menu {
         height: 440vh;
@@ -44,46 +69,69 @@
 
 @media screen and (min-width: 1399px) {
     .div_menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-right: 100px;
-        gap: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }
-@media screen and (max-width: 421px) {
-    .fondo_spaceat_menu {
-        height: 480vh;
-        width: 100%;
-        background-image: url("../img/Fondo");
-        background-color: #222221;
+    @media screen and (max-width: 421px) {
+        .fondo_spaceat_menu {
+            height: 480vh;
+            width: 100%;
+            background-image: url("../img/Fondo");
+            background-color: #222221;
+        }
     }
-}
 
 
-@media screen and (min-width: 421px) {
-    .fondo_spaceat_menu {
-        height: 530vh;
-        width: 100%;
-        background-image: url("../img/Fondo");
-        background-color: #222221;
+    @media screen and (min-width: 421px) {
+        .fondo_spaceat_menu {
+            height: 530vh;
+            width: 100%;
+            background-image: url("../img/Fondo");
+            background-color: #222221;
+        }
     }
-}
 
-@media screen and (min-width: 767px) {
-    .fondo_spaceat_menu {
-        height: 360vh;
-        width: 100%;
-        background-image: url("../img/Fondo");
-        background-color: #222221;
+    @media screen and (min-width: 767px) {
+        .fondo_spaceat_menu {
+            height: 1200vh;
+            width: 100%;
+            background-image: url("../img/Fondo");
+            background-color: #222221;
+        }
     }
-}
 
-@media screen and (min-width: 1399px) {
-    .fondo_spaceat_menu {
-        height: 155vh;
-        width: 100%;
-        background-image: url("../img/Fondo");
-        background-color: #222221;
+    @media screen and (min-width: 1399px) {
+        .fondo_spaceat_menu {
+            height: 275vh;
+            width: 100%;
+            background-image: url("../img/Fondo");
+            background-color: #222221;
+
+        }
+    }
+
+    #carrito {
+        display: none;
+        position: fixed;
+        top: 10%;
+        right: 10%;
+        width: 30%;
+        height: auto;
+        background-color: whitesmoke;
+        z-index: 1001;
+    }
+
+    .imagen_carrito {
+        width: 30px;
+        height: 20px;
+    }
+
+.btn_comprar{
+    .btn-comprar {
+        position: absolute;
+        bottom: 120px; /* Ajusta la distancia desde la parte inferior según tus preferencias */
+        right: 100px; /* Ajusta la distancia desde la derecha según tus preferencias */
     }
 }
